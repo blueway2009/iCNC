@@ -101,7 +101,7 @@ struct MOTION
 	CIRCLE_INPUT circleInput;
 };
 
-union MOTION_FUNCTION //union 中只會有一個值是有效的
+union MOTION_FUNCTION 
 {
 	MOTION motion;
 	RT_FUNCTION rtFunction;
@@ -110,7 +110,6 @@ union MOTION_FUNCTION //union 中只會有一個值是有效的
 
 struct MMI_TO_SYS_DATA
 {
-	//長時間改變項 除非有其他動作才會改變狀態
 
 	int  counter;
 	bool ncFileValid;
